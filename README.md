@@ -21,7 +21,8 @@ A simple Laravel-based invoice generator that calculates totals (including tax),
 2. Create a new **Inbox** under the **Sandbox** section.
 3. Open the inbox → click **Integrations → Laravel 9+** → copy the SMTP config.
 4. Paste this into your `.env` file
-5. run `php artisan queue:work` before using the form 
+5. Make Sure to `copy .env.example .env` to make .env and configure the database to run the migration
+6. run `php artisan queue:work` before using the form 
 ---
 
 ## 📂 Project Structure
