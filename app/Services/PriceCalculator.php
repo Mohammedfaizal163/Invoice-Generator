@@ -2,6 +2,11 @@
 
 namespace App\Services;
 
+/**
+ * Service For PriceCalculator.
+ *
+ *
+ */
 class PriceCalculator
 {
     protected $price, $qty, $tax;

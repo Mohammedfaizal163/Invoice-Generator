@@ -14,6 +14,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        //Price Calculator Service Registered
         $this->app->singleton(PriceCalculator::class, function () {
             return new PriceCalculator();
         });

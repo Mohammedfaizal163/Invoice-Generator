@@ -35,6 +35,7 @@ class InvoiceGeneratorForm extends Controller
 
 
 
+        //calculated data added to the validated array
         $validated['subtotoal']  = $subtotoal;
         $validated['tax_amount']  = $tax_amount;
         $validated['total_amount']  = $total_amount;
@@ -43,6 +44,7 @@ class InvoiceGeneratorForm extends Controller
 
         $invoice = InvoiceLog::create($validated);
 
+        //event trigger after data store
         event(new InvoiceCreated($invoice));
 
 

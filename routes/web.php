@@ -15,8 +15,10 @@ use App\Http\Controllers\InvoiceGeneratorForm;
 |
 */
 
+//Client Invoice Form
 Route::get('/', function () {
     return view('welcome');
 });
 
+//Client Invoice Form Save Route
 Route::post('/client-form', [InvoiceGeneratorForm::class, 'store'])->name('client.store');

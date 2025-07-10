@@ -3,10 +3,10 @@
 namespace App\Events;
 
 use App\Models\InvoiceLog;
-
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
 
+//Event created 
 class InvoiceCreated
 {
     use Dispatchable, SerializesModels;

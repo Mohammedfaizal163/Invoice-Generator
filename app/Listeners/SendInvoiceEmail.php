@@ -30,7 +30,7 @@ class SendInvoiceEmail implements ShouldQueue
      */
     public function handle(InvoiceCreated $event)
     {
-        Log::info('📢 Listener triggered for: ' . $event->invoice->client_name);
+        Log::info('Listener triggered for: ' . $event->invoice->client_name);
         Mail::to($event->invoice->email)->queue(new InvoiceMail($event->invoice));
     }
 }
