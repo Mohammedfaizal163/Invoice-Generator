@@ -15,7 +15,7 @@ A simple Laravel-based invoice generator that calculates totals (including tax),
 
 ---
 
-## 📬 Email Setup Using Mailtrap
+## 📬 Email Setup Using Mailtrap & .env setup
 
 1. Go to [https://mailtrap.io](https://mailtrap.io) and **sign up**.
 2. Create a new **Inbox** under the **Sandbox** section.
